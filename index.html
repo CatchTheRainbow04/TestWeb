@@ -9,9 +9,25 @@
             display: flex;
             justify-content: center;
         }
+        @keyframes changeColor {
+            0% {
+                color: rgb(255, 0, 0); /* Màu đỏ */
+            }
+            50% {
+                color: rgb(0, 255, 0); /* Màu xanh lá cây */
+            }
+            100% {
+                color: rgb(0, 0, 255); /* Màu xanh dương */
+            }
+        }
+
+        .color-changing-text {
+            animation: changeColor 5s infinite; /* 3s là thời gian để chuyển đổi màu, 'infinite' để animation chạy liên tục */
+        }
     </style>
 </head>
 <body>
-    <h1>Địt mẹ kim nam</h1>
+    <h1 class="color-changing-text">Địt mẹ kim nam</h1>
+    
 </body>
 </html>
